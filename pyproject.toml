@@ -5,6 +5,10 @@ description = ""
 authors = ["Hongwei Ye <yehwhey@gmail.com>"]
 license = "MIT"
 readme = "README.md"
+include = [
+  "tests/data/*.vcf.gz",
+  "tests/data/*.vcf.gz.tbi",
+]
 
 [tool.poetry.scripts]
 
