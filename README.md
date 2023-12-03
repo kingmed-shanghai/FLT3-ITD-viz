@@ -26,3 +26,15 @@ pre-commit install
 pre-commit run --all-files
 ```
 
+## Dash IGV Visualization
+
+Run example Dash app:
+
+```python
+python -m tests.test_igv
+```
+
+For detailed information on the Dash application for genomic data visualization using the Integrative Genomics Viewer (IGV), please refer to documentation in [`docs/dash_igv.md`](docs/dash_igv.md).
+
+This documentation provides an overview, usage instructions, and a detailed explanation of the key components of our Dash IGV visualization app. It's an excellent resource for understanding how to interact with and utilize the app effectively for genomic data exploration.
+
