@@ -1,0 +1,6 @@
+.vscode
+.pre-commit-hooks.yaml
+.pre-commit-config.yaml
+.github/workflows
+*.md
+*.yaml

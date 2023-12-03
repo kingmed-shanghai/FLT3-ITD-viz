@@ -1,0 +1,52 @@
+[tool.poetry]
+name = "flt3-itd-viz"
+version = "0.0.0"
+description = ""
+authors = ["Hongwei Ye <yehwhey@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.scripts]
+
+[tool.poetry.dependencies]
+python = ">=3.12, <3.13"
+deprecation = "^2.1.0"
+typer = "^0.9.0"
+rich = "^13.7.0"
+numpy = "^1.26.2"
+pandas = "^2.1.3"
+lxml = "^4.9.3"
+openpyxl = "^3.1.2"
+xlsxwriter = "^3.1.9"
+pyyaml = "^6.0.1"
+ecs-logging = "^2.1.0"
+pydantic = "^2.5.2"
+plotly = "^5.18.0"
+dash = "^2.14.2"
+dash-bio = "^1.0.2"
+flask = "^3.0.0"
+flask-cors = "^4.0.0"
+
+
+[tool.poetry.group.dev.dependencies]
+pynvim = "^0.4.3"
+flake8 = "^6.1.0"
+isort = "^5.12.0"
+black = "^23.11.0"
+prettier = "^0.0.7"
+pre-commit = "^3.5.0"
+jupyterlab = "^4.0.9"
+jupyterlab-lsp = "^5.0.1"
+python-lsp-server = "^1.9.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0", "poetry-dynamic-versioning"]
+build-backend = "poetry_dynamic_versioning.backend"
+
+[tool.poetry-dynamic-versioning]
+enable = true
+vcs = "git"
+style = "semver"
+
+[tool.poetry-dynamic-versioning.substitution]
+files = ["*/__version__.py"]
